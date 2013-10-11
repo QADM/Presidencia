@@ -1,0 +1,37 @@
+.message_icon {
+    float: left;
+    height: 20px;
+    margin: 0;
+    vertical-align: middle;
+    width: 25px;
+}
+
+.message_info {
+    background:transparent url(../../images/messages/icono_info.png) no-repeat scroll 0 0;
+}
+.message_warning {
+    background:transparent url(../../images/messages/icono_advertencia.png) no-repeat scroll 0 0;
+}
+.message_error {
+    background:transparent url(../../images/messages/icono_error.png) no-repeat scroll 0 0;
+}
+.message_confirm {
+    background:transparent url(../../images/messages/icono_confirmacion.png) no-repeat scroll 0 0;
+}
+
+
+.ui-dialog .ui-dialog-buttonpane button {
+    width: auto;
+    height: auto;
+}
+.ui-dialog .ui-dialog-content, .ui-dialog-buttonpane {
+    background-color: #ffffff !important;
+    margin: 0 !important;
+    padding-top: 20px;
+}
+.ui-dialog .ui-dialog-title {
+    text-align: center;
+    float: none;
+}
+
+

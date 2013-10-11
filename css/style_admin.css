@@ -1,0 +1,539 @@
+
+#_body{
+    min-height: 500px;
+}
+
+/* Style of jquery notify message */
+#container-notify *{
+    background: #E6EFC2;
+    color: #264409;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#container-notify p{
+    font-size: 14px;
+}
+
+/* Admin styles -------------------------------------------------------  */
+
+div.content-admin{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 5px 5px 5px 5px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 3px;
+    padding: 10px 10px 50px;
+    text-align: left;
+    width: 994px;
+    min-height: 300px;
+}
+
+/* For table in Menu home page */
+
+table td.child {
+    padding-left: 25px !important;
+
+}
+table td.grandchild {
+    padding-left : 50px !important;
+
+}
+
+div.content-admin div, div.content-admin span, div.content-admin a, div.content-admin img, div.content-admin fieldset,
+div.content-admin form, div.content-admin label, div.content-admin legend, div.content-admin table, div.content-admin caption,
+div.content-admin tbody, div.content-admin tfoot, div.content-admin thead, div.content-admin tr, div.content-admin th,
+div.content-admin td, div.content-admin textarea, div.content-admin input, div.content-admin select {
+    margin: 0; padding: 0; font-weight: inherit; font-style: inherit;
+    font-size: 100%; font-family: inherit; vertical-align: baseline;
+}
+
+div.content-admin table {border-collapse: collapse; border-spacing: 0;}
+div.content-admin caption, div.content-admin th, div.content-admin td {text-align: left; font-weight: normal;}
+div.content-admin table, div.content-admin td, div.content-admin th {vertical-align: middle;}
+div.content-admin a img {border: none;}
+
+div.content-admin .page_title{
+    color: #444444;
+    font-weight: normal;
+    line-height: 1;
+    margin-top:  1em;
+    margin-bottom: 1.5em;
+    /*    font-size: 1.8em;*/
+    text-align: center;
+}
+
+/* Link */
+
+div.content-admin a:focus, div.content-admin a:hover {
+    color: #039;
+}
+div.content-admin a {
+    text-decoration: none;
+}
+
+/* Form Filter */
+
+div.content-admin div.filter-bound{
+    margin-top: 2em;
+    border: 1px solid #7ecee1;
+}
+
+div.content-admin div.filter-bound-min{
+    margin-top: 0.8em;
+    border: 1px solid #FFCC76;
+}
+
+div.content-admin div.filter-title{
+    background-color: #7ecee1;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    /*color: #fff;*/
+}
+
+div.content-admin div.filter-title-min{
+    background-color: #FFCC76;
+    padding: 2px;
+}
+
+div.content-admin div.filter{
+    background-color: #cfe2e6;
+    padding: 10px;
+}
+
+div.content-admin div.filter-min{
+    background-color: #FFCC76;
+    padding: 5px;
+}
+
+div.content-admin div.filter-item, div.content-admin div.filter-item-min {
+    padding: 5px;
+    min-width: 200px;
+    float: left;
+}
+
+div.content-admin div.filter-item-min{
+    min-width: 100px;
+}
+
+div.content-admin div.filter-property, div.content-admin div.filter-value,
+div.content-admin div.filter-empty, div.content-admin div.filter-submit{
+    width: auto;
+}
+
+div.content-admin div.filter-empty{
+    min-height: 20px;
+}
+
+div.content-admin div.filter-item input.text, div.content-admin div.filter-item input.text_long,
+div.content-admin div.filter-item textarea, div.content-admin div.filter-item select,
+div.content-admin div.filter-item input{
+    border: 1px solid #7ecee1;
+}
+
+div.content-admin div.filter-submit{
+    text-align: right;
+    padding: 3px 3px 0 0;
+
+}
+
+div.content-admin div.filter-submit input.button{
+    border: 1px solid #7ecee1;
+    font-weight: bold;
+    background: #7ecee1;
+    width: 60px;
+    height: 25px;
+    padding: 0px !important;
+    line-height: 1;
+}
+
+
+
+/* End Form Filter*/
+
+div.content-admin form .required {font-weight: bold;}
+
+div.content-admin .form-error {border-color: #F00;}
+div.content-admin .form-row {padding: 5px 0;}
+div.content-admin .form-row-submit {
+    padding: 8px 0 10px 0px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+div.content-admin .form-row-submit-upload {
+    padding: 8px 0 10px 16px;
+    margin-top: 10px;
+}
+
+div.content-admin .form-login-submit {
+    padding: 8px 0 10px 0px;
+    margin-top: 10px;
+
+}
+div.content-admin .legend {
+    background: #F0FAF0;
+    border: 1px solid #D6DFD6;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 8px 14px;
+}
+div.content-admin .form-property, div.content-admin .form-value, div.content-admin .form-login-property, div.content-admin .form-property-radio {float: left;}
+div.content-admin .form-property {
+    padding-top: 0px;
+    text-align: right;
+    width: 123px;
+}
+div.content-admin .form-login-property {
+    padding-top: 0px;
+    text-align: right;
+    width: 100px;
+}
+
+div.content-admin .form-property-upload{
+    padding-left: 16px;
+    font-size: 1.3em;
+}
+
+div.content-admin .form-property-left{
+    padding-top: 0px;
+    text-align: left;
+    float:left;
+    width: 150px;
+}
+
+div.content-admin .form-property-radio{
+    padding-top: 0px;
+    text-align: left;
+    width: 140px;
+}
+
+div.content-admin .form-value {padding-left: 16px;}
+div.content-admin .form-error {border-color: #F00;}
+
+div.content-admin .clear,div.content-admin .clearer {clear: both;}
+div.content-admin .clearer {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+
+div.content-admin .span{
+    display: block;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #085DB6;
+    padding: 10px;
+}
+
+.top_menu_admin {
+    background-color:#162433;
+    height:25px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    opacity: 0.85;
+}
+
+#top_menu_offset{
+    height: 25px;
+    width: 100%;
+}
+
+#title_menu_admin{
+    color: #6EB8FF;
+    float: left;
+    font: 11px Arial,sans-serif;
+    padding: 6px;
+    text-transform: uppercase;
+    width: 100px;
+}
+#menu_admin{
+    margin: 0 auto;
+    width: 997px;
+}
+
+/* Forms */
+
+div.content-admin label {
+    cursor: pointer;
+    font-weight: bold;
+}
+div.content-admin label.checkbox, div.content-admin label.radio {font-weight: normal;}
+div.content-admin legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+div.content-admin input.text, div.content-admin input.text_long, div.content-admin input.text_short,
+div.content-admin textarea, div.content-admin select {
+    background: #FCFCFC;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px 2px 2px 2px;
+    padding: 2px;
+    width:140px;
+    min-height: 17px;
+}
+
+div.content-admin textarea {
+    overflow: auto;
+    height: 100px;
+    width: 200px;
+    text-transform: uppercase;
+}
+div.content-admin input.text {
+    text-transform: uppercase;
+}
+
+div.content-admin textarea.text_seo{
+    width: 350px;
+}
+
+div.content-admin select{
+    width:auto;
+    min-width: 140px;
+}
+
+div.content-admin select.auto{
+    width:auto;
+    min-width: 40px;
+}
+
+div.content-admin select.multiple{
+    width:250px;
+    height: 100px;
+}
+
+div.content-admin input.text_long, div.content-admin textarea.text_long{width:240px;}
+div.content-admin input.text_short{width: 50px;}
+div.content-admin input.text:focus, div.content-admin textarea:focus, div.content-admin select:focus, div.content-admin input.text_long,
+input.text_short {background: #FFFFF5;}
+
+div.content-admin input.button, div.content-admin button.button {
+    background: #DDD;
+    border: 1px SOLID #999;
+    border-radius: 2px 2px 2px 2px;
+    padding: 3px 4px;
+    cursor:pointer;
+}
+div.content-admin input.button:active button.button:active {border-style: inset;}
+
+div.content-admin fieldset.fsborder, div.content-admin fieldset.fstable{
+    border: 1px solid #CCCCCC;
+}
+div.content-admin fieldset.fsborder1{
+    border: 1px solid #CCCCCC;
+    width: 900px;
+}
+
+div.content-admin fieldset.fstable legend{
+    font-weight: normal;
+    font-size: 1.5em;
+    color: #666;
+}
+div.content-admin label.error, div.content-admin input.error, div.content-admin textarea.error, div.content-admin select.error{
+    border: 0px;
+    margin-bottom: 0px;
+    background: none;
+}
+
+div.content-admin select.error{
+    padding: 2px;
+}
+
+div.content-admin label.error{
+    font-style:italic;
+    font-weight:normal;
+    text-align: right;
+    color: red;
+}
+
+div.content-admin input.error, div.content-admin textarea.error, div.content-admin select.error{
+    border:1px dotted #8A1F11;
+}
+
+/* Labels */
+div.content-admin .label {
+    border-left-style: solid;
+    border-left-width: 4px;
+    margin-bottom: 0.2em;
+    padding-left: 10px;
+}
+
+/* Tables */
+
+div.content-admin table {margin-bottom: 1.4em; width: 100%;}
+div.content-admin th {font-weight: bold;}
+div.content-admin thead th {background: #CDCDCD;color:#000}
+div.content-admin th,div.content-admin td, div.content-admin caption {padding: 4px 10px 4px 5px;}
+div.content-admin tr.even td {background: #F2F6FA;}
+div.content-admin tfoot {font-style: italic;}
+div.content-admin caption {background: #EEE;}
+
+div.content-admin table.data-table {
+    border: 1px solid #CCB;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 100%;
+}
+div.content-admin table.data-table th {
+    border: 1px solid #AAA;
+    text-align: left;
+}
+div.content-admin table.data-table tr {border-bottom: 1px solid #DDD;}
+div.content-admin table th {padding: 6px;}
+div.content-admin table.data-table td {
+    background: #F6F6F6;
+    border: 1px solid #BBB;
+    padding: 3px;
+}
+
+div.content-admin table.data-table tr.even td {background: #FFF;}
+div.content-admin table.data-table tr.odd td {background: #EFEFEF;}
+
+div.content-admin table.table-form, table.table-remark{
+    margin-bottom: 10px;
+}
+
+div.content-admin table.table-form tbody tr{
+    border-bottom: 1px solid #C3D9FF;
+}
+
+div.content-admin table.table-remark tbody tr{
+    border-bottom: 1px solid #FFF6BF;
+}
+
+div.content-admin table.table-remark th{
+    background-color: #FFF6BF;
+}
+
+
+div.content-admin table.table-details {
+    border: 1px solid #CCCCBB;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 100%;
+}
+
+div.content-admin table.table-details .table-details-label,
+div.content-admin table.table-details .table-details-data{
+    border: 1px solid #CCCCBB;
+}
+
+div.content-admin table.table-details .table-details-label{
+    background-color: #EEE;
+}
+
+/*Table of inspections*/
+div.content-admin table.inspection-table{
+    /*    border: 1px solid #CCB;*/
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+div.content-admin table.inspection-table input.ok{
+    border: 1px solid #CCCCCC;
+    padding: 2px;
+}
+
+div.content-admin table.inspection-table td {
+    background: #FFF;
+    border: 1px solid #444;
+    padding: 3px;
+    font-size: 11px;
+}
+
+div.content-admin table.inspection-table td.noborder-td {
+    border: 0;
+}
+
+div.content-admin table.inspection-table input.min-input {
+    width: 27px;
+}
+
+div.content-admin table.inspection-table input {
+    width: 70px;
+}
+
+div.content-admin table.inspection-table td.rotate-90-td {
+    max-width: 30px;
+    width: 30px;
+    vertical-align: bottom;
+    padding-bottom: 10px;
+}
+
+
+/* Misc */
+
+div.content-admin .rotate-90 {
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    /*    writing-mode:tb-rl;*/
+    white-space:nowrap;
+    display:block;
+}
+
+div.content-admin .error, div.content-admin .notice, div.content-admin .success, div.content-admin .message {
+    border: 1px solid #DDD;
+    margin-bottom: 1em;
+    padding: 0.6em 0.8em;
+}
+
+div.content-admin div.error, div.content-admin div.notice, div.content-admin div.success, div.content-admin div.message{
+    margin-top: 1em;
+}
+
+div.content-admin div.error p, div.content-admin div.notice p, div.content-admin div.success p, div.content-admin div.message p{
+    margin-bottom: 0.0em;
+}
+
+div.content-admin .error {background: #FBE3E4; color: #8A1F11; border-color: #FBC2C4; text-align: center;}
+div.content-admin .error a {color: #8A1F11;}
+
+div.content-admin .notice {background: #FFF6BF; color: #514721; border-color: #FFD324;}
+div.content-admin .notice a {color: #514721;}
+
+div.content-admin .success {background: #E6EFC2; color: #264409; border-color: #C6D880;}
+div.content-admin .success a {color: #264409;}
+
+div.content-admin .message {
+    background: #FFF6BF; color: #514721; border-color: #FFD324;
+    text-align:center;
+}
+div.content-admin .message a {color: #262E2E;}
+
+
+#mark{
+    width: 500px;
+    border:1px solid #DDD;
+    padding: 5px 5px 5px 10px;
+    margin: 5px 0 5px 0;
+}
+
+#mark_upload{
+    width: 400px;
+    border:1px solid #DDD;
+    padding: 5px 5px 5px 10px;
+    margin: 5px 0 5px 0;
+    float:left;
+    min-height: 210px;
+}
+
+#mark_upload_image{
+    width: 400px;
+    border:1px solid #DDD;
+    padding: 5px 5px 5px 10px;
+    margin: 5px 0 0 5px;
+    float:left;
+    min-height: 210px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+

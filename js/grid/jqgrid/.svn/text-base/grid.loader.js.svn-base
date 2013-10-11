@@ -1,0 +1,95 @@
+//This file should be used if you want to debug and develop
+function jqGridInclude()
+{
+    // Y@SMANY comentareado este codigo
+    //    var pathtojsfiles = "js/"; // need to be ajusted
+
+
+    // set include to false if you do not want some modules to be included
+    var modules = [
+        { include: true, incfile:'plugins/jqgrid/grid.locale-es'},  // jqGrid translation
+        { include: true, incfile:'plugins/jqgrid/grid.base'},       // jqGrid base
+        { include: true, incfile:'plugins/jqgrid/grid.common'},     // jqGrid common for editing
+        { include: true, incfile:'plugins/jqgrid/grid.formedit'},   // jqGrid Form editing
+        { include: true, incfile:'plugins/jqgrid/grid.inlinedit'},  // jqGrid inline editing
+        { include: true, incfile:'plugins/jqgrid/grid.celledit'},   // jqGrid cell editing
+        { include: true, incfile:'plugins/jqgrid/grid.subgrid'},    // jqGrid subgrid
+        { include: true, incfile:'plugins/jqgrid/grid.treegrid'},   // jqGrid treegrid
+	{ include: true, incfile:'plugins/jqgrid/grid.grouping'},   // jqGrid grouping
+        { include: true, incfile:'plugins/jqgrid/grid.custom'},     // jqGrid custom
+        { include: true, incfile:'plugins/jqgrid/grid.tbltogrid'},  // jqGrid table to grid
+        { include: true, incfile:'plugins/jqgrid/grid.import'},     // jqGrid import
+        { include: true, incfile:'plugins/jqgrid/jquery.fmatter'},  // jqGrid formater
+        { include: true, incfile:'plugins/jqgrid/JsonXml'},         // xmljson utils
+        { include: true, incfile:'plugins/jqgrid/grid.jqueryui'},   // jQuery UI utils
+        { include: true, incfile:'plugins/jqgrid/grid.filter'}      // filter Plugin
+    ];
+
+    var filename;
+    for(var i=0;i<modules.length; i++)
+    {
+        if(modules[i].include === true) {
+        	filename = modules[i].incfile;
+       		if(jQuery.browser.safari) {
+       			jQuery.ajax({ url: base_url() + "assets/js/jquery/" + filename,
+                                           dataType:'script',
+                                           async:false,
+                                           cache: true
+                                    });
+       		}
+            else {
+       			system.core.loadJQ(filename);
+       		}
+        }
+    }
+};
+jqGridInclude();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    var filename;
+//    for(var i=0;i<modules.length; i++)
+//    {
+//        if(modules[i].include === true) {
+//        	filename = pathtojsfiles+modules[i].incfile;
+//			if(jQuery.browser.safari) {
+//				jQuery.ajax({url:filename,dataType:'script', async:false, cache: true});
+//			} else {
+//				if (jQuery.browser.msie) {
+//					document.write('<script charset="utf-8" type="text/javascript" src="'+filename+'"></script>');
+//				} else {
+//					IncludeJavaScript(filename);
+//				}
+//			}
+//		}
+//    }
+//	function IncludeJavaScript(jsFile)
+//    {
+//        var oHead = document.getElementsByTagName('head')[0];
+//        var oScript = document.createElement('script');
+//        oScript.setAttribute('type', 'text/javascript');
+//        oScript.setAttribute('language', 'javascript');
+//        oScript.setAttribute('src', jsFile);
+//        oHead.appendChild(oScript);
+//    }
+//}
+//jqGridInclude();
